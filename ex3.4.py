@@ -48,14 +48,14 @@ class CircularQueue:
 
 def producer():
     while True:
-        num = random.randint(1, 10)
-        time.sleep(num)
-        q.enqueue(num)        
+        number = random.randint(1, 10)
+        time.sleep(number)
+        q.enqueue(number)        
 
 def consumer():
     while True:
-        num = random.randint(1, 10)
-        time.sleep(num)
+        number = random.randint(1, 10)
+        time.sleep(number)
         data = q.dequeue()
         print(f"Consumed: {data}")
 
